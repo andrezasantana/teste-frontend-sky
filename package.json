@@ -1,0 +1,21 @@
+{
+  "name": "sky-filmes",
+  "version": "1.0.0",
+  "description": "catálogo de filmes da sky",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andreza Santana",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "browser-sync": "^2.26.12"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "slick": "^1.12.2"
+  }
+}
