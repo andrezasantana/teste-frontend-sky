@@ -16,7 +16,11 @@ function style() {
 
 //Compilar js
 function script() {
-    return gulp.src('src/js/**/*.js')
+    return gulp.src([
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'src/js/**/*.js'])
+        .pipe(concat('app.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.stream());
 }
