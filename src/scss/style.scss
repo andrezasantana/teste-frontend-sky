@@ -1,1 +1,16 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+
+.nav-link{
+    i{
+        padding-right: 8px;
+    }
+    &:hover{
+        color: gray;
+    }
+    color: white;
+}
+body {
+    font-family: helvetica;
+    background-color: #fafafa;
+}
+
