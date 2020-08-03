@@ -51,4 +51,8 @@ function watch() {
     gulp.watch('src/*.html', html);
 }
 
+exports.style = style;
+exports.script = script;
+exports.html = html;
+exports.webfonts = webfonts;
 exports.watch = gulp.series(style, script, html, webfonts, watch);
