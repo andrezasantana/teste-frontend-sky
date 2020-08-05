@@ -7,6 +7,7 @@ const browserSync = require('browser-sync').create();
 function style() {
     return gulp.src([
         'node_modules/@fortawesome/fontawesome-free/css/all.min.css',
+        'node_modules/slick-carousel/slick/slick.css',
         'src/scss/**/*.scss'])
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.css'))
@@ -19,6 +20,7 @@ function script() {
     return gulp.src([
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/slick-carousel/slick/slick.js',
         'src/js/**/*.js'])
         .pipe(concat('app.js'))
         .pipe(gulp.dest('dist/js'))
