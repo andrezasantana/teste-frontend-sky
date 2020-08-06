@@ -18,7 +18,10 @@ footer {
         color: white;
         font-size: 24px;
     }
-        color:white;
+    color:white;
+    @media screen and (max-width: 600px) {
+        font-size: small;
+      }
 }
 .highlights {
     img {
