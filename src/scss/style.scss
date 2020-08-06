@@ -33,15 +33,20 @@ footer {
     }
     position: relative;
 }
-.carousel-control {
-    i {
-        font-size: 32px;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        border-style: solid;
-        border-radius: 50%;
-        background-color: white;
-        color: black;
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 32px;
+    @media screen and (max-width: 600px) {
+        display: none !important;
+      }
+}
+.carousel-arrow-prev {
+    left: 16px;
+}
+.carousel-arrow-next {
+    right: 16px;
+}
     }
 }
