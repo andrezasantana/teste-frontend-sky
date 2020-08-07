@@ -44,7 +44,7 @@ function startSlide2() {
     $('#slide-2').slick({
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         prevArrow: $("#control-prev-2"),
         nextArrow: $("#control-next-2"),
         responsive: [
